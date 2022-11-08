@@ -123,7 +123,7 @@ class MainWindow(QMainWindow):
 
 
         self.setWindowTitle("NuReminders")
-        self.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'dh.ico')))
+        self.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'person-icon.png')))
 
         self.createCalendarGroupBox()
         self.createEntryGroupBox()
@@ -684,7 +684,7 @@ QListView::item:selected:!active {
 )
 
 window = MainWindow()
-window.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'dh.ico')))
+window.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'person-icon.png')))
 window.show()
 
 app.exec_()
